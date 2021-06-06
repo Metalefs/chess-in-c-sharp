@@ -1,0 +1,13 @@
+D:\Conhecimento\Cursos\C#\Exercises\Xadrez_Console\Xadrez_Console\bin\Debug\netcoreapp3.1\Xadrez_Console.exe
+D:\Conhecimento\Cursos\C#\Exercises\Xadrez_Console\Xadrez_Console\bin\Debug\netcoreapp3.1\Xadrez_Console.deps.json
+D:\Conhecimento\Cursos\C#\Exercises\Xadrez_Console\Xadrez_Console\bin\Debug\netcoreapp3.1\Xadrez_Console.runtimeconfig.json
+D:\Conhecimento\Cursos\C#\Exercises\Xadrez_Console\Xadrez_Console\bin\Debug\netcoreapp3.1\Xadrez_Console.runtimeconfig.dev.json
+D:\Conhecimento\Cursos\C#\Exercises\Xadrez_Console\Xadrez_Console\bin\Debug\netcoreapp3.1\Xadrez_Console.dll
+D:\Conhecimento\Cursos\C#\Exercises\Xadrez_Console\Xadrez_Console\bin\Debug\netcoreapp3.1\Xadrez_Console.pdb
+D:\Conhecimento\Cursos\C#\Exercises\Xadrez_Console\Xadrez_Console\obj\Debug\netcoreapp3.1\Xadrez_Console.csprojAssemblyReference.cache
+D:\Conhecimento\Cursos\C#\Exercises\Xadrez_Console\Xadrez_Console\obj\Debug\netcoreapp3.1\Xadrez_Console.AssemblyInfoInputs.cache
+D:\Conhecimento\Cursos\C#\Exercises\Xadrez_Console\Xadrez_Console\obj\Debug\netcoreapp3.1\Xadrez_Console.AssemblyInfo.cs
+D:\Conhecimento\Cursos\C#\Exercises\Xadrez_Console\Xadrez_Console\obj\Debug\netcoreapp3.1\Xadrez_Console.csproj.CoreCompileInputs.cache
+D:\Conhecimento\Cursos\C#\Exercises\Xadrez_Console\Xadrez_Console\obj\Debug\netcoreapp3.1\Xadrez_Console.dll
+D:\Conhecimento\Cursos\C#\Exercises\Xadrez_Console\Xadrez_Console\obj\Debug\netcoreapp3.1\Xadrez_Console.pdb
+D:\Conhecimento\Cursos\C#\Exercises\Xadrez_Console\Xadrez_Console\obj\Debug\netcoreapp3.1\Xadrez_Console.genruntimeconfig.cache
