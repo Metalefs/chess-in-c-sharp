@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Xadrez_Console.Xadrez.Movimentacao;
 using Xadrez_Console.TabuleiroB;
 
 namespace Xadrez_Console.Xadrez
 {
-    class Rei : Peca
+    class Rei : MovimentacaoLivreUmaCasa
     {
         public Rei(Tabuleiro tabuleiro, Cor cor) : base(tabuleiro,cor)
         {
@@ -15,5 +13,13 @@ namespace Xadrez_Console.Xadrez
         {
             return "R";
         }
+
+        public override bool PodeMover(Posicao pos)
+        {
+            Peca p = Tabuleiro.Peca(pos);
+            return p == null || p.Cor != Cor;
+        }
+
+        
     }
 }

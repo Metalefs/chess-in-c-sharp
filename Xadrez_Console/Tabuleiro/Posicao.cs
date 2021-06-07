@@ -15,14 +15,10 @@ namespace Xadrez_Console.TabuleiroB
             Coluna = coluna;
         }
 
-        public override bool Equals(object obj)
+        public void DefinirValores(int linha, int coluna)
         {
-            return base.Equals(obj);
-        }
-
-        public override int GetHashCode()
-        {
-            return base.GetHashCode();
+            Linha = linha;
+            Coluna = coluna;
         }
 
         public override string ToString()
