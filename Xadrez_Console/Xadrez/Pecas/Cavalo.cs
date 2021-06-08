@@ -15,5 +15,10 @@ namespace Xadrez_Console.Xadrez
         {
             return "C";
         }
+
+        public override bool[,] MovimentosPossiveis()
+        {
+            return new bool[0, 0];
+        }
     }
 }
