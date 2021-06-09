@@ -5,10 +5,16 @@ using Xadrez_Console.TabuleiroB;
 
 namespace Xadrez_Console.Xadrez
 {
-    class Bispo : Peca
+    class Bispo : Movimentacao.MovimentacaoDiagonalVariasCasas
     {
         public Bispo(Tabuleiro tabuleiro, Cor cor) : base(tabuleiro, cor)
         {
+        }
+
+        public override bool PodeMover(Posicao pos)
+        {
+            Peca p = Tabuleiro.Peca(pos);
+            return p == null || p.Cor != Cor;
         }
 
         public override string ToString()
@@ -16,9 +22,5 @@ namespace Xadrez_Console.Xadrez
             return "B";
         }
 
-        public override bool[,] MovimentosPossiveis()
-        {
-            return new bool[0, 0];
-        }
     }
 }

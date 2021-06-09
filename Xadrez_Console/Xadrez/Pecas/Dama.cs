@@ -2,24 +2,18 @@
 using System.Collections.Generic;
 using System.Text;
 using Xadrez_Console.TabuleiroB;
-using Xadrez_Console.Xadrez.Movimentacao;
 
 namespace Xadrez_Console.Xadrez
 {
-    class Cavalo : MovimentacaoEmL
+    class Dama : Movimentacao.MovimentacaoLivreVariasCasas
     {
-        public Cavalo(Tabuleiro tabuleiro, Cor cor) : base(tabuleiro, cor)
+        public Dama(Tabuleiro tabuleiro, Cor cor) : base(tabuleiro, cor)
         {
         }
 
         public override string ToString()
         {
-            return "C";
-        }
-
-        public override bool[,] MovimentosPossiveis()
-        {
-            return new bool[0, 0];
+            return "R";
         }
 
         public override bool PodeMover(Posicao pos)
@@ -27,5 +21,6 @@ namespace Xadrez_Console.Xadrez
             Peca p = Tabuleiro.Peca(pos);
             return p == null || p.Cor != Cor;
         }
+
     }
 }
