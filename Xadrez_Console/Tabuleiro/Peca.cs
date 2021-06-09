@@ -23,6 +23,10 @@ namespace Xadrez_Console.TabuleiroB
         {
             QtdMovimentos++;
         }
+        public void DecrementarQtdMovimentos()
+        {
+            QtdMovimentos--;
+        }
 
         public bool ExisteMovimentosPossiveis()
         {
