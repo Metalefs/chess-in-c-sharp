@@ -13,7 +13,7 @@ namespace Xadrez_Console.Xadrez
 
         public override string ToString()
         {
-            return "R";
+            return "D";
         }
 
         public override bool PodeMover(Posicao pos)

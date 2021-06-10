@@ -18,51 +18,87 @@ namespace Xadrez_Console.Xadrez.Movimentacao
             Posicao pos = new Posicao(0, 0);
 
             //se
+            pos.DefinirValores(Posicao.Linha + 1, Posicao.Coluna + 1);
             while (Tabuleiro.PosicaoValida(pos) && PodeMover(pos))
             {
-                pos.DefinirValores(Posicao.Linha + 1, Posicao.Coluna + 1);
-                if (Tabuleiro.Peca(pos) != null && Tabuleiro.Peca(pos).Cor != Cor)
+                try
                 {
-                    break;
+                    if (Tabuleiro.Peca(pos) != null && Tabuleiro.Peca(pos).Cor != Cor)
+                    {
+                        mat[pos.Linha, pos.Coluna] = true;
+                        break;
+                    }
+                    else
+                    {
+                        mat[pos.Linha, pos.Coluna] = true;
+                    }
+                    pos.Linha = pos.Linha + 1;
+                    pos.Coluna = pos.Coluna + 1;
                 }
-                pos.Linha = pos.Linha + 1;
-                pos.Coluna = pos.Coluna + 1;
+                catch (Exception) { continue; }
             }
 
             //so
+            pos.DefinirValores(Posicao.Linha + 1, Posicao.Coluna - 1);
             while (Tabuleiro.PosicaoValida(pos) && PodeMover(pos))
             {
-                pos.DefinirValores(Posicao.Linha + 1, Posicao.Coluna - 1);
-                if (Tabuleiro.Peca(pos) != null && Tabuleiro.Peca(pos).Cor != Cor)
+                try
                 {
-                    break;
+                    if (Tabuleiro.Peca(pos) != null && Tabuleiro.Peca(pos).Cor != Cor)
+                    {
+                        mat[pos.Linha, pos.Coluna] = true;
+                        break;
+                    }
+                    else
+                    {
+                        mat[pos.Linha, pos.Coluna] = true;
+                    }
+                    pos.Linha = pos.Linha + 1;
+                    pos.Coluna = pos.Coluna - 1;
                 }
-                pos.Linha = pos.Linha + 1;
-                pos.Coluna = pos.Coluna - 1;
+                catch (Exception) { continue; }
             }
 
             //ne
+            pos.DefinirValores(Posicao.Linha - 1, Posicao.Coluna + 1);
             while (Tabuleiro.PosicaoValida(pos) && PodeMover(pos))
             {
-                pos.DefinirValores(Posicao.Linha - 1, Posicao.Coluna + 1);
-                if (Tabuleiro.Peca(pos) != null && Tabuleiro.Peca(pos).Cor != Cor)
+                try
                 {
-                    break;
+                    if (Tabuleiro.Peca(pos) != null && Tabuleiro.Peca(pos).Cor != Cor)
+                    {
+                        mat[pos.Linha, pos.Coluna] = true;
+                        break;
+                    }
+                    else
+                    {
+                        mat[pos.Linha, pos.Coluna] = true;
+                    }
+                    pos.Linha = pos.Linha - 1;
+                    pos.Coluna = pos.Coluna + 1;
                 }
-                pos.Linha = pos.Linha - 1;
-                pos.Coluna = pos.Coluna + 1;
+                catch (Exception) { continue; }
             }
 
             //no
+            pos.DefinirValores(Posicao.Linha - 1, Posicao.Coluna - 1);
             while (Tabuleiro.PosicaoValida(pos) && PodeMover(pos))
             {
-                pos.DefinirValores(Posicao.Linha - 1, Posicao.Coluna - 1);
-                if (Tabuleiro.Peca(pos) != null && Tabuleiro.Peca(pos).Cor != Cor)
+                try
                 {
-                    break;
+                    if (Tabuleiro.Peca(pos) != null && Tabuleiro.Peca(pos).Cor != Cor)
+                    {
+                        mat[pos.Linha, pos.Coluna] = true;
+                        break;
+                    }
+                    else
+                    {
+                        mat[pos.Linha, pos.Coluna] = true;
+                    }
+                    pos.Linha = pos.Linha - 1;
+                    pos.Coluna = pos.Coluna - 1;
                 }
-                pos.Linha = pos.Linha - 1;
-                pos.Coluna = pos.Coluna - 1;
+                catch (Exception) { continue; }
             }
 
             return mat;

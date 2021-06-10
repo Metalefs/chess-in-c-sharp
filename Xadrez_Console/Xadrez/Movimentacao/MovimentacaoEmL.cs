@@ -31,8 +31,8 @@ namespace Xadrez_Console.Xadrez.Movimentacao
                 mat[pos.Linha, pos.Coluna] = true;
             }
 
-            //direita
-            pos.DefinirValores(Posicao.Linha - 2, Posicao.Coluna + 1);
+            //no
+            pos.DefinirValores(Posicao.Linha - 2, Posicao.Coluna - 1);
             if (Tabuleiro.PosicaoValida(pos) && PodeMover(pos))
             {
                 mat[pos.Linha, pos.Coluna] = true;

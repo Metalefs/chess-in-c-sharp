@@ -17,11 +17,6 @@ namespace Xadrez_Console.Xadrez
             return "C";
         }
 
-        public override bool[,] MovimentosPossiveis()
-        {
-            return new bool[0, 0];
-        }
-
         public override bool PodeMover(Posicao pos)
         {
             Peca p = Tabuleiro.Peca(pos);
