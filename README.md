@@ -1,3 +1,3 @@
 # chess-console
 
-Emulate a game of chess on console
+Emulate a game of chess in console
